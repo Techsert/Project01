@@ -1,0 +1,31 @@
+01alef.png", "size": (151, 700), "y_offset": -246}
+02ba.png", "size": (500, 375), "y_offset": 219}
+03ta.png", "size": (500, 354), "y_offset": 100}
+04tha.png", "size": (500, 417), "y_offset": 37}
+05geam.png", "size": (426, 540), "y_offset": -80}
+06ha.png", "size": (426, 540), "y_offset": -80}
+07ka.png", "size": (426, 700), "y_offset": -250}
+08dal.png", "size": (250, 285), "y_offset": 170}
+09thal.png", "size": (250, 430), "y_offset": 25}
+10ra.png", "size": (300, 450), "y_offset": 150}
+11zay.png", "size": (300, 640), "y_offset": -30}
+12sen.png", "size": (520, 440), "y_offset": 205}
+13shen.png", "size": (520, 715), "y_offset": -70}
+14sad.png", "size": (500, 430), "y_offset": 205}
+15dad.png", "size": (500, 590), "y_offset": 55}
+16taa.png", "size": (500, 590), "y_offset": -140}
+17zaa.png", "size": (500, 590), "y_offset": -140}
+18aen.png", "size": (426, 540), "y_offset": -80}
+19gean.png", "size": (426, 700), "y_offset": -250}
+20feh.png", "size": (500, 354), "y_offset": 100}
+21kf.png", "size": (450, 450), "y_offset": 100}
+22kaf.png", "size": (350, 550), "y_offset": -100
+23lam.png", "size": (280, 610), "y_offset": -100}
+24meam.png", "size": (250, 450), "y_offset": 70}
+25noon.png", "size": (450, 450), "y_offset": 100}
+26heh.png", "size": (400, 400), "y_offset": 70}
+27waw.png", "size": (300, 450), "y_offset": 150}
+28yaa.png", "size": (450, 450), "y_offset": 170}
+
+ضُّو. ضُّو
+
