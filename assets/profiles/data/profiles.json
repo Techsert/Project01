@@ -1,0 +1,286 @@
+[
+    {
+        "name": "logo",
+        "age": "5",
+        "avatar": "avatar1.png",
+        "rewards": [
+            "reward_15.png",
+            "reward_02.png",
+            "reward_01.png",
+            "reward_14.png",
+            "reward_03.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                }
+            },
+            "quiz": {
+                "1": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 2,
+                    "last_score": 100
+                }
+            }
+        }
+    },
+    {
+        "name": "mogo",
+        "age": "4",
+        "avatar": "avatar3.png",
+        "rewards": [
+            "reward_01.png",
+            "reward_14.png",
+            "reward_03.png",
+            "reward_15.png",
+            "reward_02.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                }
+            },
+            "quiz": {
+                "1": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 1,
+                    "last_score": 100
+                }
+            }
+        }
+    },
+    {
+        "name": "fhj",
+        "age": "6",
+        "avatar": "avatar1.png",
+        "rewards": [
+            "reward_04.png",
+            "reward_01.png",
+            "reward_03.png",
+            "reward_14.png",
+            "reward_15.png",
+            "reward_05.png",
+            "reward_02.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                },
+                "2": {
+                    "T1": true,
+                    "T2": true,
+                    "T7": true,
+                    "P1": true
+                }
+            },
+            "quiz": {
+                "1": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 1,
+                    "last_score": 100
+                }
+            }
+        }
+    },
+    {
+        "name": "mona",
+        "age": "5",
+        "avatar": "avatar4.png",
+        "rewards": [
+            "reward_20.png",
+            "reward_05.png",
+            "reward_18.png",
+            "reward_03.png",
+            "reward_17.png",
+            "reward_15.png",
+            "reward_07.png",
+            "reward_02.png",
+            "reward_04.png",
+            "reward_01.png",
+            "reward_14.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                },
+                "2": {
+                    "T1": true,
+                    "T2": true,
+                    "P1": true
+                },
+                "3": {
+                    "T1": true,
+                    "P1": true
+                }
+            },
+            "quiz": {
+                "1": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 2,
+                    "last_score": 100
+                },
+                "2": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 2,
+                    "last_score": 100
+                },
+                "3": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 1,
+                    "last_score": 100
+                }
+            }
+        }
+    },
+    {
+        "name": "Mos",
+        "age": "4",
+        "avatar": "avatar1.png",
+        "rewards": [
+            "reward_20.png",
+            "reward_15.png",
+            "reward_01.png",
+            "reward_03.png",
+            "reward_17.png",
+            "reward_14.png",
+            "reward_02.png",
+            "reward_04.png",
+            "reward_18.png",
+            "reward_05.png",
+            "reward_07.png",
+            "reward_16.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                },
+                "2": {
+                    "T1": true,
+                    "T2": true,
+                    "P1": true
+                },
+                "3": {
+                    "T1": true,
+                    "P1": true
+                },
+                "4": {
+                    "T1": true,
+                    "P1": true
+                }
+            },
+            "quiz": {
+                "1": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 2,
+                    "last_score": 100
+                },
+                "2": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 3,
+                    "last_score": 100
+                },
+                "3": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 3,
+                    "last_score": 100
+                },
+                "4": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 1,
+                    "last_score": 100
+                }
+            }
+        }
+    },
+    {
+        "name": "rty",
+        "age": "5",
+        "avatar": "avatar1.png",
+        "rewards": [
+            "reward_18.png",
+            "reward_17.png",
+            "reward_15.png",
+            "reward_04.png",
+            "reward_07.png",
+            "reward_03.png",
+            "reward_20.png",
+            "reward_14.png",
+            "reward_05.png",
+            "reward_02.png",
+            "reward_01.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                },
+                "2": {
+                    "T1": true,
+                    "T2": true,
+                    "P1": true
+                },
+                "3": {
+                    "T1": true,
+                    "P1": true
+                },
+                "4": {
+                    "T1": true,
+                    "P1": true
+                }
+            },
+            "quiz": {
+                "1": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 4,
+                    "last_score": 71
+                },
+                "2": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 2,
+                    "last_score": 100
+                },
+                "3": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 1,
+                    "last_score": 100
+                }
+            }
+        }
+    }
+]
