@@ -1,0 +1,7 @@
+fixing some cosmatic issue including:
+1- make the exit button in practice and quiz uses the same function instead of having seperate function for each.
+2- shift the back button in practice and quiz from center to the left bottom to not over lap the clicj=kes with the check answer button. 
+3- change the slide title for drag and drop and tracing the leters.
+4- removed the exit button from the learn_lvl as they not needed, the user can just click the back button and will see the exit button in the previouse screen.
+5- realin the next back and exit button after removing the exit button space.
+6- making learn_lvl with single slide only shows the back button onlt and the one with multiple slides doesn't show previouse on the firest slide or next at the last slide. 
