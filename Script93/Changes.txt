@@ -1,0 +1,13 @@
+fixing some cosmatic issue including:
+1- in the learn_lvl1_T1.py changed the "audio_delay": from 0.1 to 0.4 hoping to match the video with the audio.
+2- chang the code for the exit button in the profile_screen.py so the icon size match the ones in the main app.
+3- fixing the size for some letters in quiz_lvl1.py
+4- changed the Back buton text "Back" in the video_slide_base.py to "Finish"
+5- added pressing the ESC key function with confirmation msg to the learn_lvl inside the video_slide_base.py.
+
+
+Issues:
+- Clicking the back button in learn_lvl X without completing the entire module will mark the module as complete.
+- No need for the age field when creating or viewing profile.
+- confusion between back and exit button.
+- need a back button in the topic selection screen and level selection screen. 
