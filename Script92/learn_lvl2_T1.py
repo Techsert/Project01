@@ -44,7 +44,7 @@ SLIDES_T1 = [
         ],
         "texts": [
             {
-                "text": "Ra",
+                "text": "Raa",
                 "delay": 31200,
                 "position": "center",
                 "offset": {"x": 750, "y": -150},

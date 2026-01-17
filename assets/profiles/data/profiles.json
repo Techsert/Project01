@@ -282,5 +282,61 @@
                 }
             }
         }
+    },
+    {
+        "name": "fdgfdfg",
+        "age": "6",
+        "avatar": "avatar1.png",
+        "rewards": [
+            "reward_14.png",
+            "reward_05.png",
+            "reward_04.png",
+            "reward_03.png",
+            "reward_18.png",
+            "reward_01.png",
+            "reward_15.png",
+            "reward_07.png",
+            "reward_02.png",
+            "reward_17.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                },
+                "2": {
+                    "T1": true,
+                    "T2": true,
+                    "P1": true
+                },
+                "3": {
+                    "T1": true,
+                    "P1": true
+                }
+            },
+            "quiz": {
+                "1": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 1,
+                    "last_score": 100
+                },
+                "2": {
+                    "completed": true,
+                    "best_score": 100,
+                    "attempts": 7,
+                    "last_score": 100
+                },
+                "3": {
+                    "completed": true,
+                    "best_score": 0,
+                    "attempts": 1,
+                    "last_score": 0
+                }
+            }
+        }
     }
 ]
