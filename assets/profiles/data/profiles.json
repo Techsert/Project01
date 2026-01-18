@@ -338,5 +338,26 @@
                 }
             }
         }
+    },
+    {
+        "name": "malik",
+        "age": "33",
+        "avatar": "avatar1.png",
+        "rewards": [
+            "reward_03.png",
+            "reward_02.png",
+            "reward_01.png"
+        ],
+        "progress": {
+            "learning": {
+                "1": {
+                    "T1": true,
+                    "T2": true,
+                    "T3": true,
+                    "P1": true
+                }
+            },
+            "quiz": {}
+        }
     }
 ]

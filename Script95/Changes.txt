@@ -1,0 +1,21 @@
+
+1- Continue working on the design of practice 2 content only.
+finished the drag and drop questions. 
+Start working on tracing
+
+
+Issues:
+- Clicking the back button in learn_lvl X without completing the entire module will mark the module as complete.
+in Script93 we added pressing the ESC key function with confirmation msg to the learn_lvl inside the video_slide_base.py.
+To prevent the user from cheating the system by clicking the back "Finish" button to mark the learnig as complete 
+before finishing the learning. we need to changed the appearance logic for the navigation buttons in the learn_lvl 
+so that the back "Finish" button only appears at the last slide and use it as marker to mark the learn_lvl complete. 
+However we will still have the issue of the user pressed the ESC button before finishing the module. 
+we could ad a finish slide at the end of each module that will show the fic=nish button and only by clicking 
+that finish button the lvl is to be marked complete.  
+
+- No need for the age field when creating or viewing profile.
+- confusion between back and exit button.
+- need a back button in the topic selection screen and level selection screen. 
+- we need to add the sound repeat button incase the used walk away from the device and come back later
+- feedback that says ممتاز ... اجابه صحيحه is too long so it gets cut off halfway when it playes. change it to shorter.

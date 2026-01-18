@@ -1,0 +1,8 @@
+Github upload files
+Step 1: use Windows Powershell and be in the folder.
+PS E:\01 pythone games\Script92>
+
+Step 2:  
+PS E:\01 pythone games\Script92> git add ..\Script92\
+PS E:\01 pythone games\Script92> git commit -m "add latest"
+PS E:\01 pythone games\Script92> git push -u origin main

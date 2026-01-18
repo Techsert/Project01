@@ -1,0 +1,142 @@
+# Add New Topic Screen & New topic:
+
+	1- Create the new Level topics screen In the learning_topics.py 
+		A- copy one of the def_topic_X
+		B- Modify the as required.
+		
+def topic_one(screen, main_app):
+    SCREEN_WIDTH, SCREEN_HEIGHT = screen.get_size()
+    bg_path = os.path.join(config.IMG_MAIN_PATH, "bg-tr.png")
+
+    try:
+        bg_image = pygame.image.load(bg_path).convert_alpha()
+    except Exception as e:
+        print(f"⚠️ Missing {bg_path}: {e}")
+        bg_image = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
+        bg_image.fill((255, 255, 255))
+
+    # === FLEXIBLE BACKGROUND ===
+    bg_w = int(SCREEN_WIDTH * 0.95)
+    bg_h = int(SCREEN_HEIGHT * 0.8)
+    bg_image = pygame.transform.smoothscale(bg_image, (bg_w, bg_h))
+    bg_rect = bg_image.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
+    bg_rect.y -= 0
+
+    # === BUTTON DIMENSIONS AND POSITIONS RELATIVE TO BACKGROUND ===
+    btn_w, btn_h = int(bg_w * 0.14), int(bg_h * 0.30)
+    
+    positions = [
+        (0.82, 0.33), # Introduction
+        (0.66, 0.63), # Alphabet Names
+        (0.50, 0.33),  # Revision
+        (0.34, 0.63),  # P1
+        (0.18, 0.33),  # Quiz One
+    ]
+
+    # New structure for topics: (text, action, hover_sound, button_image_filename)
+    topics_data = [
+        ("", main_app.launch_learn_lvl1_T1, "hover_Lvl1_Topic1_ogg.ogg", "T_lvl1_T1.png", "T1"),    # Introduction
+        ("", main_app.launch_learn_lvl1_T2, "hover_Lvl1_Topic2_ogg.ogg", "T_lvl1_T2.png", "T2"),    # Alphabet Names
+        ("", main_app.launch_learn_lvl1_T3, "hover_Lvl1_Topic3_ogg.ogg", "T_lvl1_T3.png", "T3"),    # Revision
+        ("", main_app.launch_practice_lvl1_P1, "hover_practice.ogg", "T_lvl1_T4.png", "P1"),        # ✅ Practice 1
+        ("", main_app.launch_quiz_lvl1, "hover_quiz_lvl_1.ogg", "Q_lvl1.png", "Q1"),                # Quiz One
+    ]
+
+    # === Build buttons with unique images ===
+    buttons = []
+    for (text, action, hover, img_filename, item_id), (rx, ry) in zip(topics_data, positions):
+        x = bg_rect.left + int(rx * bg_w)
+        y = bg_rect.top + int(ry * bg_h)
+
+        # Image loading logic...
+        scaled_button_image = None
+        button_img_path = os.path.join(config.IMG_MAIN_PATH, img_filename)
+        try:
+            button_image = pygame.image.load(button_img_path).convert_alpha()
+            scaled_button_image = pygame.transform.smoothscale(button_image, (btn_w, btn_h))
+        except: pass
+
+        rect = pygame.Rect(x - btn_w // 2, y - btn_h // 2, btn_w, btn_h)
+
+        buttons.append({
+            "text": text,
+            "action": action,
+            "hover": os.path.join(config.SOUND_MAIN_PATH, hover),
+            "rect": rect,
+            "image": scaled_button_image,
+            "id": item_id # ✅ Pass explicit ID
+        })
+
+    draw_topic_screen(screen, main_app, "Learning Level 1", buttons, bg_image, bg_rect, level=1)
+	
+	
+		C- Include the new topic function inside the def run_learning_topics(screen, main_app, level=1):
+		
+				topic_map = {
+				1: topic_one,
+				2: topic_two,
+				3: topic_three,
+				4: topic_four,
+			}
+	
+	
+	2- Create the files for Topics, Practices, Quizzez
+		
+		A- Copy the practice, topic, quiz files as required for this levels. this must matchs the files you refrenced in the previouse step (learning_topics.py)
+			learn_lvl7_T1.py
+			practice_lvl7_P1
+			quiz_lvl7
+		B- Modiffy the files as required. 
+		
+	3- Update the profile_system.py
+	
+		A- Include the new files for the new topic
+	
+					LEARNING_STRUCTURE = {
+				1: ["T1", "T2", "T3", "P1", "Q1"],
+				2: ["T1", "T2", "P1", "Q2"],  
+				3: ["T1", "P1", "Q3"],  
+			}
+	
+		B- Assign the rewards for the new topics
+		
+					REWARD_CRITERIA = {
+			# ===== TOPIC COMPLETION REWARDS =====
+			# Level 1 Topics
+			"reward_01.png": {"type": "topic_complete", "level": 1, "topic": "T1"},
+			"reward_02.png": {"type": "topic_complete", "level": 1, "topic": "T2"},
+			"reward_03.png": {"type": "topic_complete", "level": 1, "topic": "T3"},
+			
+			# Level 2 Topics
+			"reward_04.png": {"type": "topic_complete", "level": 2, "topic": "T1"},
+			"reward_05.png": {"type": "topic_complete", "level": 2, "topic": "T2"},
+			"reward_06.png": {"type": "topic_complete", "level": 2, "topic": "T3"},
+		
+		
+	4- Update main_menu.py 
+		A- Import the files for the topic scrren 
+			from learn_lvl4_T1 import run_learn_lvl4_T1				# Main Topic
+			from practice_lvl4_P1 import run_practice_lvl4_P1		# Practice
+			from quiz_lvl4 import run_quiz_lvl4						# Quiz
+			
+		B- Include the functions to import the topics files
+			
+			    def launch_learn_lvl4_T1(self):
+					"""Launch Level 4 Topic 1."""
+					self.audio_manager.stop_all_sounds()
+					run_learn_lvl4_T1(self.screen, self)
+					self._reload_profile()
+	
+				def launch_practice_lvl4_P1(self):
+					"""Launch Level 4 Practice 1."""
+					self.audio_manager.stop_all_sounds()
+					run_practice_lvl4_P1(self.screen, self)
+					self._reload_profile()
+					
+			    def launch_quiz_lvl4(self):
+					"""Launch Level 4 Quiz."""
+					self.audio_manager.stop_all_sounds()
+					run_quiz_lvl4(self.screen, self)
+					self._reload_profile()
+	
+	
